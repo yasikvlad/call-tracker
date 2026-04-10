@@ -18,14 +18,29 @@
 
 ## Установка
 
-### 1. Клонируй репозиторий
+### Вариант 1 — Автоматически через Claude Cowork (рекомендуется)
+
+Открой Claude Cowork, скопируй это сообщение целиком в любой чат:
+
+> Изучи репозиторий https://github.com/yasikvlad/call-tracker и установи его как скилл Claude Code: создай папку `~/.claude/skills/call-tracker/`, положи туда `SKILL.md` из репозитория, после этого подтверди, что скилл готов к использованию.
+
+Cowork сам скачает файл, положит куда надо и подтвердит установку. 30 секунд.
+
+### Вариант 2 — Вручную через ZIP
+
+1. Скачай ZIP: **[call-tracker.zip (latest release)](https://github.com/yasikvlad/call-tracker/releases/latest/download/call-tracker.zip)**
+2. Распакуй архив
+3. Переложи папку `call-tracker/` в `~/.claude/skills/`
+4. Перезапусти Claude Code
+
+Итоговый путь должен быть: `~/.claude/skills/call-tracker/SKILL.md`
+
+### Вариант 3 — Через git
 
 ```bash
 cd ~/.claude/skills/
-git clone https://github.com/YOUR_USERNAME/call-tracker.git
+git clone https://github.com/yasikvlad/call-tracker.git
 ```
-
-Или скачай `SKILL.md` вручную и положи в `~/.claude/skills/call-tracker/SKILL.md`.
 
 ### 2. Подключи интеграции (см. полную инструкцию)
 
@@ -45,7 +60,7 @@ git clone https://github.com/YOUR_USERNAME/call-tracker.git
 
 ## Полная инструкция
 
-Смотри [call-tracker-instruction.html](./call-tracker-instruction.html) — пошаговая инструкция от установки до первого запуска.
+Смотри [bonus.aimarketolog.site](https://bonus.aimarketolog.site) — пошаговая инструкция от установки до первого запуска.
 
 ## Требования
 
